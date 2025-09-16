@@ -6,13 +6,13 @@
 #    By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/16 11:57:02 by gyildiz           #+#    #+#              #
-#    Updated: 2025/09/16 11:57:45 by gyildiz          ###   ########.fr        #
+#    Updated: 2025/09/16 18:59:35 by gyildiz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = main.cpp Fixed.cpp
 OBJS = $(SRCS:.cpp=.o)
-EXE_NAME = zombie
+EXE_NAME = camel
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
