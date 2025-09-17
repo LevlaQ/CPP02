@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 11:56:51 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/16 18:58:29 by gyildiz          ###   ########.fr       */
+/*   Updated: 2025/09/17 18:44:24 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 Fixed::Fixed()
 {
 	this->fix_num = 0;
-	std::cout << "Default Constructor called" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &copy)
 {
-	std::cout << "Copy Constructor called" << std::endl;
+	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
 }
 

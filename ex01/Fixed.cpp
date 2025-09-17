@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 19:26:00 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/16 19:59:29 by gyildiz          ###   ########.fr       */
+/*   Updated: 2025/09/17 18:44:36 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,25 @@
 Fixed::Fixed()
 {
 	this->fix_num = 0;
-	std::cout << "Default Constructor called" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &copy)
 {
-	std::cout << "Copy Constructor called" << std::endl;
+	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
 }
 
 Fixed::Fixed(int const i)
 {
-	
+	std::cout << "Int constructor called" << std::endl;
+	fix_num = i << frac_bits;
 }
 
 Fixed::Fixed(float const f)
 {
-	
+	std::cout << "Float constructor called" << std::endl;
+	fix_num = (int)roundf(f * (1 << frac_bits));
 }
 
 Fixed::~Fixed()
@@ -43,7 +45,7 @@ Fixed & Fixed::operator=(const Fixed &assign)
 {
 	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &assign)
-		this->fix_num = assign.getRawBits();
+		this->fix_num = assign.fix_num;
 	return *this;
 }
 
@@ -60,10 +62,16 @@ void	Fixed::setRawBits (int const raw)
 
 float	Fixed::toFloat( void ) const
 {
-	
+	return ((float)fix_num / (1 << frac_bits));
 }
 
 int	Fixed::toInt( void ) const
 {
-	
+	return (fix_num >> frac_bits);
+}
+
+std::ostream & operator<<(std::ostream &stream, Fixed const &ins)
+{
+	stream << ins.toFloat();
+	return (stream);
 }
