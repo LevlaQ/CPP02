@@ -6,14 +6,13 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 11:57:54 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/27 13:56:23 by gyildiz          ###   ########.fr       */
+/*   Updated: 2025/09/27 14:08:53 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # ifndef FIXED_HPP
 # define FIXED_HPP
 #  include <iostream>
-#  include <string>
 #  include <cmath>
 
 class Fixed
