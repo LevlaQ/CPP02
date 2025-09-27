@@ -6,11 +6,12 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 19:26:33 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/17 18:21:30 by gyildiz          ###   ########.fr       */
+/*   Updated: 2025/09/27 13:57:52 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# pragma once
+#ifndef FIXED_HPP
+# define FIXED_HPP
 # include <iostream>
 # include <string>
 # include <cmath>
@@ -37,3 +38,5 @@ class Fixed
 };
 
 std::ostream & operator<<(std::ostream &stream, Fixed const &ins);
+
+#endif

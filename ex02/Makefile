@@ -6,11 +6,11 @@
 #    By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/16 11:58:00 by gyildiz           #+#    #+#              #
-#    Updated: 2025/09/16 19:02:32 by gyildiz          ###   ########.fr        #
+#    Updated: 2025/09/27 13:30:44 by gyildiz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = main.cpp Fixed.cpp
+SRCS = main.cpp Fixed.cpp op_overloads.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXE_NAME = camel
 CXX = c++
